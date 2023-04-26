@@ -4,3 +4,8 @@ Welcome to my JavaScript repository! Here, I will be sharing my knowledge of Jav
 In addition, I would like to invite you to contribute to this repository by sharing your own JavaScript learnings. If you come across any interesting resources or learn something new about JavaScript, feel free to update the repository and help others learn as well.
 
 Let's learn JavaScript together and create a thriving community of programmers!
+
+
+## License
+
+[MIT License](LICENSE)
