@@ -2,8 +2,8 @@ console.log(3**3);  //whenever ** this ^ is sign of power and here 3^3 = 27  <Ex
 
 console.log(5 +"parth");  // this will get added without any error \
 
-// swap two number: 
 
+// swap two number: 
 
 var a = 1;
 var b = 2;
@@ -26,5 +26,4 @@ var b = a-b;
 var a = a-b;
 
 console.log("a: "+a);
-
 console.log("b: "+b);
