@@ -1,0 +1,21 @@
+var area = "circle";
+var Pi =3.14, l=5, b=6, r=5;
+
+switch(area){
+    case "circle" : {
+        console.log("area of circle is = " + Pi*r**2);
+        break;
+    }
+    case "tri":{
+        console.log("area of tri is = " + (l*b)/2);
+        break;
+    }
+    case rect :{
+        console.log("area of rect is = " + l*b);
+        break;
+    }
+    default:{
+        console.log("wrong input");
+        break;
+    }
+}
