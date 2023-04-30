@@ -16,3 +16,5 @@ for(let element in friends){
 for(let element of friends){ 
     console.log(element);
 }
+
+
