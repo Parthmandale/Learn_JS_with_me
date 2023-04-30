@@ -12,7 +12,7 @@ for(let element in friends){
     console.log(element);
 }
 
- For of loop  -> of means names
+ // For of loop  -> of means names
 for(let element of friends){ 
     console.log(element);
 }
