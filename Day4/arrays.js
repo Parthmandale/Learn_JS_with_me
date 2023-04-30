@@ -1,10 +1,10 @@
-// var friends=['bishal', 'parth', 'shubham'];
+var friends=['bishal', 'parth', 'shubham'];
 
-// console.log(friends[1]);   
+console.log(friends[1]);   
 
-// console.log(friends.length);
+console.log(friends.length);
 
-// console.log(friends[friends.length-1])
+console.log(friends[friends.length-1])
 
 // For in loop -> in means number of elements
 var friends=['bishal', 'parth', 'shubham'];
