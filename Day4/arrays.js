@@ -6,7 +6,7 @@ console.log(friends.length);
 
 console.log(friends[friends.length-1])
 
-// For in loop -> in means number of elements
+// For in loop -> in means index of elements
 var friends=['bishal', 'parth', 'shubham'];
 for(let element in friends){ 
     console.log(element);
