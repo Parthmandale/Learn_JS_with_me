@@ -39,8 +39,25 @@
 // }
 
 // delete every thing after march
-const month =["jan","feb","march", "april"];
-const update = month.splice(1,Infinity,)
-console.log(month);
+// const month =["jan","feb","march", "april"];
+// const update = month.splice(1,Infinity,)
+// console.log(month);
+// console.log(update); // wiil tell whichever data deleted
 
-console.log(update); // wiil tell whichever data deleted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
