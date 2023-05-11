@@ -3,6 +3,7 @@
 
 // const newMonth = month.splice(month.length,0,"may");  // want to add on 5th index(last) , 0 deletion , wanted to add may at 5th index
 // console.log(month);
+// console.log(newMonth);  //[] empty as the splice methid show delted element
 
 // sol 2: return value of splice
 // console.log(newMonth); //-->> [] empty brackets bcoz we are not deleting anything and splice methiod is more inlclined towards deleting the element
@@ -16,7 +17,7 @@
 
 // const month =["jan","feb","march", "april"];
 
-// const indexofMonth = month.indexOf("feb");     // value of IndexOf 1 is being stored over there
+// const indexofMonth = month.indexOf("feb");     // value of Index = 1 is being stored over there
 
 // if(indexofMonth != -1){
 //     const update_month = month.splice(indexofMonth, 1, 'February');
@@ -37,7 +38,9 @@
 //     console.log("The element is not present");
 // }
 
-// delete every thing from march
+// delete every thing after march
 const month =["jan","feb","march", "april"];
-const update = month.splice(1,Infinity)
+const update = month.splice(1,Infinity,)
 console.log(month);
+
+console.log(update); // wiil tell whichever data deleted
