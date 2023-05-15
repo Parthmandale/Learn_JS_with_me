@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-color: aqua;
+          place-items: center;
+        }
+        
+     
+
+    </style>
+</head>
+<body>
+    <center>
+    <p class="para"> Like the video</p>
+    <p class="para"> and coment below</p>
+    <p>subscribe</p>
+    <h1 id="heading">Change this content</h1>
+    <button onclick="changeContent()">click me</button>
+
+    <form action="">
+<label for="">select</label>
+<input type="radio" name = "gender">
+
+    </form>
+</center>
+
+
+<script>
+const changeContent = () => {
+    // document.getElementById('heading').innerHTML = "New wording is here";
+//or by taking refrence also we can do the same
+
+// const headingchange = document.getElementById('heading');
+// headingchange.innerHTML = "New wording is here"
+
+
+console.log(document.getElementsByClassName('para'));
+
+console.log(document.getElementsByTagName('p'));
+
+console.log(document.getElementsByName('gender'));
+
+document.querySelector('#heading').innerHTML =  "New wording is here"
+
+console.log(document.querySelectorAll('.para'));
+
+}
+
+</script>
+</body>
+</html>
