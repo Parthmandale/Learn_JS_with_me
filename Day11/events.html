@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-color: rgb(124, 231, 236);
+        
+        }
+        
+
+    p{
+        display: block;
+        border-color: black;
+        border: solid; 
+        width: 200px;
+        background-color: yellow;
+        cursor: pointer;
+
+    }
+
+hr{
+    background-color:2px black;
+    border-style:  none;
+    border-top-style:dotted ;
+    width: 30%;
+}
+    h1{
+        cursor: pointer;
+    }
+    
+    </style>
+</head>
+<body>
+    <center>
+    <p class="para" onclick="alert(' awesome but no one really use it ')"> Simple inline alert</p>
+    <hr>
+    <!-- //1st way of writing events   -->
+       
+    
+    <p class="para" onclick="funCall()"> by calling a function</p>
+    <hr>
+    <p id="thirdWay">subscribe</p>
+    <hr>
+    <h1 id="heading">Change this content</h1>
+    <button onclick="changeContent()">click me</button>
+
+    <form action="">
+<label for="">select</label>
+<input type="radio" name = "gender">
+
+    </form>
+</center>
+
+
+<script>
+// 2 way of event
+  const funCall = () => {
+        alert('by function calling most used');
+    }
+
+    //3rd way
+const thirdWay = document.getElementById('thirdWay');
+thirdWay.onclick = function() {           //ananomyous function
+alert('third common way');
+}
+
+// 4th way of writting a function
+
+const fourthWay = document.querySelector('#heading');  // call back function
+fourthWay.addEventListener('click', () => {
+    alert('fouth way all back function')
+})
+</script>
+
+</body>
+</html>
