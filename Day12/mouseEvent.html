@@ -39,14 +39,9 @@ hr{
 <body>
     <center>
             <!-- //1st way of writing events -->
-    <p class="para" onclick="alert(' awesome but no one really use it ')"> Simple inline alert</p>
+    <p class="para" > Simple inline alert</p>
     <hr>
-
-    <p class="para" onclick="funCall()"> by calling a function</p>
-    <hr>
-    <p id="thirdWay">subscribe</p>
-    <hr>
-    <h1 id="heading">Change this content</h1>
+    <h1 id="heading" onmousedown="mouseDown()" onmouseup="mouseUp()" >Change this content</h1>
     <button onclick="changeContent()">click me</button>
 
     <form action="">
@@ -58,23 +53,28 @@ hr{
 
 
 <script>
-// 2 way of event
-  const funCall = () => {      // fat arrow function
-        alert('by function calling most used');
+// 1) mouse down and up
+    function mouseDown(){
+        document.getElementById('heading').style.color = 'green';
     }
 
-    //3rd way
-const thirdWay = document.getElementById('thirdWay');
-thirdWay.onclick = function() {           //ananomyous function
-alert('third common way');
+function mouseUp(){
+    document.getElementById('heading').style.color = 'red';
 }
 
-// 4th way of writting a function
+// 2) mouse enter and leave 
 
-const fourthWay = document.querySelector('#heading');  // call back function
-fourthWay.addEventListener('click', () => {
-    alert('fouth way all back function')
-})
+const point =  document.getElementsByClassName('para');
+
+point.addEventListener('mouseenter', () => {
+    point.style.backgroundColor = "red";
+    console.log("Mouse entered");
+});
+
+point.addEventListener('mouseleave', () => {
+    point.style.backgroundColor ="green";
+    console.log("Mouse Left");
+});
 </script>
 
 </body>
