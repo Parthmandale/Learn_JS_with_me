@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: violet;
+        }
+        
+
+         input{
+            width: 500px;
+            height: 76px;
+         }
+    </style>
+</head>
+<body>
+    <center>
+   
+    <input type="text" class="effect" onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="keyUp()"> 
+<p id="keys"></p>
+</center>
+
+<script>
+//  1st - onkeypress
+const keyPress = () =>{
+    document.getElementById('keys').innerHTML = `You pressed ${event.key} and its code is ${event.code}`;
+}
+
+// 2nd onkeydown
+const keyDown = () =>{
+    document.getElementById('key').innerHTML = `key is Down`;
+}
+
+const keyUp = () => {
+    document.getElementById('key').innerHTML = `Key is Up`;
+}
+
+</script>
+
+</body>
+</html>
